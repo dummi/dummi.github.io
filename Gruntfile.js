@@ -52,7 +52,12 @@ module.exports = function(grunt) {
         cwd: 'src/',
         dest: 'build/asset/',
         src: 'asset/*',
-        ext: '*'
+      },
+      deploy: {
+        expand: true,
+        cwd: 'build/',
+        dest: 'studio/',
+        src: [ '*', '*/*', "*/*/*" ]
       }
     }
 
