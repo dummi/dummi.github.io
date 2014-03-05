@@ -46,6 +46,13 @@ module.exports = function(grunt) {
         dest: 'build/',
         src: 'script/**/*.js',
         ext: '.js'
+      },
+      resource: {
+        expand: true,
+        cwd: 'src/',
+        dest: 'build/asset/',
+        src: 'asset/*',
+        ext: '*'
       }
     }
 
