@@ -7,9 +7,26 @@ body
 
 #logo
 	margin-top:300px
+	height: 129px;
+	position: relative;
+
+#logo_main
+	position: absolute;
+	margin-top: -65px;
+	margin-left: -55px;
+	left: 50%;
+	top: 50%;
+
+#logo_light
+	position: absolute;
+	margin-top: -65px;
+	margin-left: -55px;
+	left: 50%;
+	top: 50%;
+	
 
 #title
-	margin-top:20px
+	padding-top:30px
 
 #slogan
 	margin-top:20px
@@ -22,7 +39,19 @@ h1
 	font-family:Segoe WP Black
 
 #content
-	padding:200px 20% 
+	margin: 0 auto
+	min-width: 600px;
+	max-width: 1024px;
+	padding: 30px
+
+#content div.contentPart
+	display: block
+	margin-top: 600px
+
+#content div.contentPart h1
+	margin-bottom: 30px
+
+
 
 #des1
 	color:#E6E6E6
@@ -34,16 +63,42 @@ h1
 	color:#a1a1a1
 	font-family:Georgia
 	font-size:16px
-	line-height:24px
+	line-height:26px
+
+#des_contact
+	color:#E6E6E6
+	font-family:Georgia
+	font-size:20px
+	line-height:30px
+
+
 
 #contentPart
 	margin-top:700px
 
-#avatar
+
+div.avatar
 	position:relative
-	height:200px
-	width:200px
-	padding:20px 20px
+	height:210px
+	width:210px
+	padding:10px 10px
+	display:inline-block
+
+div.avatar img
+	height: 100%
+	width: 100%
 
 
-	
+div.product
+	height:350px
+	width:700px
+	padding:10px 70px
+	margin-left:5%
+
+.product img
+	height: 100%
+	width: 100%
+
+img.team 
+	margin: 60px auto
+	display: block
