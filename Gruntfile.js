@@ -53,6 +53,12 @@ module.exports = function(grunt) {
         dest: 'build/',
         src: 'asset/**/*',
       },
+      font: {
+        expand: true,
+        cwd: 'src/',
+        dest: 'build/',
+        src: 'font/*',
+      },
       deploy: {
         expand: true,
         cwd: 'build/',
