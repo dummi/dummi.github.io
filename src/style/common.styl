@@ -1,39 +1,86 @@
+@import nib
 
-
-body
+#section0
 	background-color:#0e1226
-	background-image:url("../asset/dummi_bkg.png")
+	background-image:url("../asset/dummi_bkg_fit.png")
 	background-repeat:no-repeat
-	background-position:center top
+	background-position:center center
+
+
+#section1
+	background-color:#0e1226
+	padding:0 300px
+
+
+#section2
+	background-color:#0e1226
+	padding:0 300px
+
+#section3
+	background-color:#0e1226
+	padding:0 300px
+
+#section4
+	background-color:#0e1226
+	padding:0 300px
+
+#section5
+	background-color:#0e1226
+	padding:0 400px
+
+h1
+	font-size:30px
 	
+#des1
+	font-size:20px
+	color:#ddd
+	line-height:26px
+	font-weight:bold
+	margin-bottom:1em
+
+#des2
+	font-size:16px
+	line-height:26px
+	margin-bottom:1em
+	color:#bbb
+
+#des3
+	font-size:16px
+	line-height:26px
+	margin-bottom:8em
+	color:#bbb
+
 
 #logo
-	margin-top:300px
-	height: 129px;
+	height: 90px;
 	position: relative;
 
 #logo_main
 	position: absolute;
 	margin-top: -65px;
 	margin-left: -55px;
-	left: 50%;
-	top: 50%;
-	display:none
 
+@keyframes blink
+	0%
+		opacity: 1.0
+	50%
+		opacity: 0.5
+	100%
+		opacity: 1.0
 
 #logo_light
 	position: absolute;
 	margin-top: -65px;
 	margin-left: -55px;
-	left: 50%;
-	top: 50%;
+	animation: blink 3s infinite;
+
+title
+	padding-top:30px
 	
 
-#title
-	padding-top:30px
-
-#title_text
-	display:none	
+#title_text	
+	opacity:0
+	
 
 #slogan
 	margin-top:20px
@@ -41,50 +88,7 @@ body
 	font-size:10px
 	color:white
 	font-size:18px
-	display:none
-
-h1
-	color:white
-	font-family:Segoe WP Black
-
-#content
-	margin: 0 auto
-	min-width: 600px;
-	max-width: 1024px;
-	padding: 30px
-
-#content div.contentPart
-	display: block
-	margin-top: 600px
-
-#content div.contentPart h1
-	margin-bottom: 30px
-
-
-
-#des1
-	color:#E6E6E6
-	font-family:Georgia
-	font-size:20px
-	line-height:30px
-
-#des2
-	color:#a1a1a1
-	font-family:Georgia
-	font-size:16px
-	line-height:26px
-
-#des_contact
-	color:#E6E6E6
-	font-family:Georgia
-	font-size:20px
-	line-height:30px
-
-
-
-#contentPart
-	margin-top:700px
-
+	opacity:0
 
 div.avatar
 	position:relative
@@ -101,13 +105,22 @@ div.avatar img
 div.product
 	height:300px
 	width:500px
-	padding:10px 0px
-	margin-left:0%
+	padding:10px 10px
+	margin-bottom:100px
+	display: inherit
 
 .product img
 	height: 100%
 	width: 100%
 
 img.team 
-	margin: 60px auto
+	margin:auto
 	display: block
+	padding-bottom: 300px
+
+#des_contact
+	color:#E6E6E6
+	font-family:Georgia
+	font-size:20px
+	line-height:30px
+	

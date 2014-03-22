@@ -8,15 +8,16 @@ html
       +ua-compatible
       +stylesheet("style/common.css")
       +stylesheet("font/stylesheet.css")
+      +stylesheet("asset/style/jquery.fullPage.css")
+      +stylesheet("asset/style/example.css")
       +javascript("http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
-      +javascript("script/timeline.js")
+      +javascript("http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js")
+
 
     title Dummi Studio
   body
-    center
-      div#header
-
-    
+    #supercontainer
+      .section.active#section0
         div#logo
           img#logo_main(src="asset/dummi_titleImg.png")
           img#logo_light(src="asset/dummi_titleImg_light.png") 
@@ -28,64 +29,69 @@ html
            img(src="asset/dummi_slogan.png")
 
 
+      .section#section1
+        h1 ABOUT US
+        p#des1 Dummi Studio is a team of geeks who are keen on developing, designing and innovation. We are experienced in practicing new technology and developing fancy product.
+        p#des2 Earned our spurs in schooldays,we have a better understanding on  product development. We are now focusing on developing wonderful apps on Android and iOS platform.Besides,new technology such as cloud computing,LBS, mobile games,mobile medical and wearable devices are our involved fields. What we haven't done and challenging really attracts us. 
+        p#des3 We will develope the best geek product and be the best geek team.
 
-  div#content
-    div.contentPart
-      h1 ABOUT US
-      p#des1 Dummi Studio is a team of geeks who are keen on developing, designing and innovation. We are experienced in practicing new technology and developing fancy product.
-      p#des2 Earned our spurs in schooldays,we have a better understanding on  product development. We are now focusing on developing wonderful apps on Android and iOS platform.Besides,cloud computing,LBS, mobile games,mobile medical and wearable devices are our involved fields. What we haven't done really attracts us. We are trying to build the best geek product and the best geek team.
-
-    div.contentPart
-      h1 MEMBER INTRODUCTION
-      div.avatar
+      .section#section2
+        h1 MEMBER INTRODUCTION
+        div.avatar
          img(src="asset/yyy_avatar.jpg") 
-      div.avatar
+        div.avatar
          img(src="asset/yyy_avatar.jpg")
-      div.avatar
+        div.avatar
          img(src="asset/yyy_avatar.jpg")
-      div.avatar
+        div.avatar
          img(src="asset/yyy_avatar.jpg")
-      div.avatar
+        div.avatar
          img(src="asset/yyy_avatar.jpg")
-      div.avatar
+        div.avatar
          img(src="asset/yyy_avatar.jpg")
-      div.avatar
+        div.avatar
          img(src="asset/yyy_avatar.jpg")
-      div.avatar
+        div.avatar
          img(src="asset/yyy_avatar.jpg")
 
 
-    div.contentPart
-      h1 PRODUCT INTRODUCTION
-      div.product
-        img(src="asset/lugo.jpg")
-      div.product
-        img(src="asset/jike_browser.jpg")
+      .section#section3
+        h1 PRODUCT INTRODUCTION
+        .product
+          img(src="asset/lugo.jpg")
+        .product
+          img(src="asset/jike_browser.jpg")
+       
 
-    div.contentPart
-      h1 TEAM BUILDING 
-        img.team(src="asset/imagineCup.jpg")
+      .section#section4
+        h1 TEAM BUILDING 
+        .slide#slide1
+          img.team(src="asset/imagineCup.jpg")
+        .slide#slide2
+          img.team(src="asset/innovationWorks.png")
 
+      .section#section5
+        h1 CONTACT US & JOIN US
+        p#des_contact You are welcomed if you are really a geek.
+        p#des_contact Join our warm family no matter where you are.
+        p#des_contact Bussiness cooperation is also welcomed if your project is challenging enough.
+        p#des_contact email: admin@dummi.org
+        p#des_contact QQgroup: 285687641
+        p#des_contact Sina WeiBo: www.weibo.com/31eqwehoi
 
-    div.contentPart
-      h1 CONTACT US & JOIN US
-
-      p#des_contact You are welcomed if you are really a geek.
-      p#des_contact Join our warm family no matter where you are.
-      p#des_contact Bussiness cooperation is also welcomed if your p#des_contact project is challenging enough.
-      p#des_contact email: admin@dummi.org
-      p#des_contact QQgroup: 285687641
-      p#des_contact Sina WeiBo: www.weibo.com/31eqwehoi
-
-      p#des_contact You can just leave a message here to say something to us. Both encouragement and tease are appreciated.
-
-
-
-
+        p#des_contact You can just leave a message here to say something to us. Both encouragement and tease are appreciated.
 
 
 
 
+
+
+
+
+
+
+    +javascript("asset/script/jquery.fullPage.js")
+    +javascript("script/timeline.js")
 
 
 
