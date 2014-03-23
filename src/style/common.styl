@@ -9,24 +9,27 @@
 
 #section1
 	background-color:#0e1226
-	padding:0 300px
+	padding:0 20%
 
 
 #section2
 	background-color:#0e1226
-	padding:0 300px
+	
 
 #section3
 	background-color:#0e1226
-	padding:0 300px
+	padding:0 20%
 
 #section4
 	background-color:#0e1226
-	padding:0 300px
+	padding:0 20%
 
 #section5
 	background-color:#0e1226
-	padding:0 400px
+	padding:0 20%
+
+
+
 
 h1
 	font-size:30px
@@ -101,17 +104,58 @@ div.avatar img
 	height: 100%
 	width: 100%
 
-
 div.product
 	height:300px
 	width:500px
 	padding:10px 10px
-	margin-bottom:100px
-	display: inherit
+	display:inherit
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	
+
+	&:hover
+		.overlay
+			opacity: 0.9
+		.overlay p
+			display:block
+
+	.overlay
+		-webkit-transition: all 1.0 ease-in
+		height: 260px
+		width: 420px
+		padding: 20px 20px 
+		position: absolute
+		opacity: 0.3
+		background: rgba(0,0,0,0.8)
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+		overflow: hidden
+
+
+.overlay p
+	color:#ccc
+	font-size:20px
+	display:none
+	padding: 0px 50px
+
+.overlay h3
+	color:#fff
+	font-size:36px
+	padding: 30px 30px 20px 30px
+
+
+
 
 .product img
 	height: 100%
 	width: 100%
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+
+
 
 img.team 
 	margin:auto
@@ -123,4 +167,82 @@ img.team
 	font-family:Georgia
 	font-size:20px
 	line-height:30px
+
+.container
+	display: flex
+	height: 100%
+	flex-flow: row nowrap
+	justify-content: center
+	align-items: stretch
+
+.slat
+	position: relative
+	width: 20%
+	height: 100%
+
+	&:nth-child(2n)
+		background-color: #eee
+
+	&:hover
+		width: 40%
+
+		.overlay
+			opacity: 0
+
+	.overlay
+		-webkit-transition: all 0.5 ease-in
+		height: 100%
+		cursor:poiter
+		opacity: 0.8
+		background: rgba(0,0,0,0.5)
+
+.slat
+	&:nth-child(1)
+		background: url("../asset/yyy_avatar.jpg") no-repeat center
+	&:nth-child(2)
+		background: url("../asset/yyy_avatar.jpg") no-repeat center
+	&:nth-child(3)
+		background: url("../asset/yyy_avatar.jpg") no-repeat center
+	&:nth-child(4)
+		background: url("../asset/yyy_avatar.jpg") no-repeat center
+	&:nth-child(5)
+		background: url("../asset/yyy_avatar.jpg") no-repeat center
+
+.slat, .slat-text
+	-webkit-transition: all 0.2s ease-in
+
+.slat-text
+	position: absolute
+	overflow: hidden
+	width: 100%
+	top: 61.8%
+	bottom: 24%
+	background-color: rgba(0,0,0,0.7)
+	&:hover
+		bottom: 5%
+
+.slat-text
+	color: #FFF
+	text-align: center
+	padding-top: 12px
+	padding-bottom: 12px
+
+.slat-text h1
+	font-size:26px
+	padding: 10px 5px 5px 10px
+
+.slat-text p
+	font-size:20px
+	padding: 10px 60px
+	&.intro
+		color:#ccc
+		font-size:16px
+
+
+	
+
+
+
+
+	
 	
