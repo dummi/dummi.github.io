@@ -1,13 +1,20 @@
-doctype html
-include utility
-html
-  head
-    block meta
-      meta(charset="utf-8")
-      +viewport
-      +ua-compatible
-    title Dummi Studio
-  body
-    center
-      h1 Under Construction ヾ(❀╹◡╹)ﾉﾞ
-
+extends framework
+append head
+  title 贰叁叁
+append favicon
+append style
+  +stylesheet('style/common.css')
+append script
+  +javascript('script/timeline.js')
+append content
+  .container
+    .slat
+      .slat-text: h1 贰叁叁
+    .slat
+      .slat-text: h1 是一个
+    .slat
+      .slat-text: h1 简单的
+    .slat
+      .slat-text: h1 小测试
+    .slat
+      .slat-text: h1 贰叁叁

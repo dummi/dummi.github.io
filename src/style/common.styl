@@ -1,0 +1,44 @@
+@import nib
+
+html
+body
+  height: 100%
+  margin: 0px
+
+.container
+  display: flex
+  height: 100%
+  flex-flow: row nowrap
+  justify-content: center
+  align-items: stretch
+
+.slat
+  position: relative
+  width: 20%
+  height: 100%
+
+  &:nth-child(2n)
+    background-color: #eee
+
+  &:hover
+    width: 40%
+
+
+.slat, .slat-text
+  -webkit-transition: all 0.2s ease-in
+
+.slat-text
+  position: absolute
+  width: 100%
+  top: 60%
+  bottom: 10%
+  background-color: rgba(0,0,0,0.7)
+
+  &:hover
+    bottom: 0%
+
+.slat-text
+  color: #FFF
+  text-align: center
+  padding-top: 12px
+
