@@ -105,13 +105,12 @@ div.avatar img
 	width: 100%
 
 div.product
-	height:300px
-	width:500px
-	padding:10px 10px
-	display:inherit
+	display:table-cell
+	position: relative
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
+
 
 
 	&:hover
@@ -121,12 +120,10 @@ div.product
 			display:block
 
 	.overlay
-		-webkit-transition: all 1.0 ease-in
-		height: 260px
-		width: 420px
-		padding: 20px 20px 
+		-webkit-transition: all 0.2s ease-in
+		height: 100%
+		width: 100%
 		position: absolute
-		
 		opacity: 0.3
 		background: rgba(0,0,0,0.8)
 		-webkit-border-radius: 3px;
@@ -147,11 +144,12 @@ div.product
 	padding: 30px 30px 20px 30px
 
 
-
+table
+	cellpadding: 10px
 
 .product img
-	height: 100%
-	width: 100%
+	height: auto
+	max-width: 100%
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
