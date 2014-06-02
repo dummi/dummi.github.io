@@ -1,6 +1,13 @@
 (function($) {
 
-	$.fn.fullpage();
+	$.fn.fullpage({
+		anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', 'fifthPage','lastPage'],
+		//menu: '#menu',
+		continuousVertical: false,
+		css3:true,
+		loopTop: true,
+		loopBottom: true
+			});
 	console.log('fullpage');
 
 	$(function(){  
