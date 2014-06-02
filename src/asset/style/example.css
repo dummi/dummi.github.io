@@ -232,10 +232,12 @@ h2{
 #infoMenu li a{
 	display: block;
 	margin: 0 22px 0 0;	
-	color: #333;
+	color: #727272;
 }
 #infoMenu li a:hover{
-	text-decoration:underline;
+	/*text-decoration:underline;*/
+	color: #8DB7F5;
+	-webkit-transition: all 0.2s ease-in
 
 }
 #infoMenu li{
