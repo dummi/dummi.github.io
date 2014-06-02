@@ -73,7 +73,7 @@ module.exports = function(grunt) {
         tasks: ['jshint', 'copy:script'],
       },
       resource: {
-        files: ['asset/**/*'],
+        files: ['src/asset/**/*'],
         tasks: ['copy:resource'],
       },
       document: {
