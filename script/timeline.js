@@ -2,11 +2,14 @@
 
 	$.fn.fullpage({
 		anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', 'fifthPage','lastPage'],
+		scrollingSpeed: 700,
+        easing: 'easeInQuart',
+        continuousVertical: true
 		//menu: '#menu',
-		continuousVertical: false,
-		css3:true,
-		loopTop: true,
-		loopBottom: true
+		//continuousVertical: false,
+		//css3:true
+		//loopTop: true,
+		//loopBottom: true
 			});
 	console.log('fullpage');
 
