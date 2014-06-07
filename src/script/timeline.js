@@ -27,6 +27,13 @@
 		//console.log('??');
 	};
 
+  $('.product').mouseenter(function () {
+    var $el = $(this);
+    $('#section3').css({'background-color': $el.css('background-color')});
+    $('.product-detail').addClass('hidden');
+    $('.product-detail:eq('+$('.product').index(this)+')').removeClass('hidden');
+  });
+
 })($);
 
 
