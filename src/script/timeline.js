@@ -4,10 +4,10 @@
 		anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', 'fifthPage','lastPage'],
 		scrollingSpeed: 700,
         easing: 'easeInQuart',
-        continuousVertical: true
+        continuousVertical: true,
 		//menu: '#menu',
 		//continuousVertical: false,
-		//css3:true
+		css3:false
 		//loopTop: true,
 		//loopBottom: true
 			});
