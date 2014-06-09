@@ -232,7 +232,7 @@ h2{
 #infoMenu li a{
 	display: block;
 	margin: 0 22px 0 0;	
-	color: #727272;
+	color: #DDD;
 }
 #infoMenu li a:hover{
 	/*text-decoration:underline;*/
